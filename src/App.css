@@ -114,11 +114,39 @@ footer a:hover {
 .aside {
   background: #dcdcdc;
   padding: 16px;
-  /* color: #fff; */
   display: flex;
   flex-direction: column;
-  /* height: 92vh; */
-  display: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+  .mainWrap {
+    grid-template-columns: 1fr; /* Adjust the grid layout for smaller screens */
+  }
+
+  .aside {
+    width: 100%; /* Make the aside div take the full width on smaller screens */
+    max-width: none; /* Remove max-width on smaller screens */
+  }
+
+  .logoImage {
+    height: 40px; /* Reduce logo height for smaller screens */
+  }
+
+  .head {
+    font-size: 1rem; /* Adjust heading font size for smaller screens */
+  }
+
+  .clientsList {
+    gap: 10px; /* Reduce gap between clients on smaller screens */
+  }
+
+  .btn {
+    font-size: 14px; /* Adjust button font size for smaller screens */
+  }
+
+  .leaveBtn {
+    margin-top: 10px; /* Adjust margin for leave button on smaller screens */
+  }
 }
 .asideInner {
   flex: 1;
