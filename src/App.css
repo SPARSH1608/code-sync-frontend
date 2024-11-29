@@ -2,152 +2,170 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000000;
+  color: #333;
   height: 100vh;
+  background-color: #f4f4f4;
 }
+
 .heading {
   position: relative;
-  left: 15px;
-  font-size: 2rem;
-  top: -18px;
+  left: 10px;
+  font-size: 2.5rem;
+  top: -10px;
+  color: #1a1a1a;
 }
+
 .head {
   position: relative;
-  font-size: 1.5rem;
-  font-weight: bold;
-  top: -18px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  top: -10px;
+  color: #2c2c2c;
 }
+
 .formWrapper {
-  background: #dcdcdc;
-  padding: 20px;
-  border-radius: 10px;
-  width: 400px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 420px;
   max-width: 90%;
 }
 
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #f4f4f4;
+  padding: 10px 0;
 }
 
 footer a {
-  color: #ee4a4a;
+  color: #e63946;
+  text-decoration: none;
 }
 
 .inputGroup {
   display: flex;
   flex-direction: column;
-  color: #000000;
+  color: #333;
 }
 
 .mainLabel {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   margin-top: 0;
+  font-weight: 600;
 }
 
 .homePageLogo {
   height: 80px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .inputBox {
-  color: #000000;
-  padding: 10px;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  margin-bottom: 14px;
-  background: #eee;
+  color: #333;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+  background: #f9f9f9;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .btn {
   border: none;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 12px;
+  border-radius: 8px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: background-color 0.3s ease;
 }
 
 .joinBtn,
 .leaveBtn {
-  background: #e35651;
-  width: 100px;
+  background: #2d6a4f;
+  color: #fff;
+  width: 120px;
   margin-left: auto;
 }
 
 .joinBtn:hover,
 .leaveBtn:hover {
-  background: #e31313;
+  background: #1b4332;
 }
 
 .createInfo {
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
 }
 
 .createNewBtn {
-  color: #ee4a4a;
+  color: #e63946;
   text-decoration: none;
-  border-bottom: 1px solid #ee4a4a;
+  border-bottom: 1px solid #e63946;
   transition: all 0.3s ease-in-out;
 }
 
 .createNewBtn:hover,
 footer a:hover {
-  color: #ff0000;
-  border-color: #368654;
+  color: #d90429;
+  border-color: #457b9d;
 }
 
 .mainWrap {
   display: grid;
-  color: black;
+  color: #333;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 400;
   grid-template-columns: 230px 1fr;
   min-height: 100vh;
+  background-color: #fafafa;
 }
 
 .aside {
-  background: #dcdcdc;
-  padding: 16px;
+  background: #f1f1f1;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  border-right: 1px solid #e0e0e0;
 }
 
 @media only screen and (max-width: 600px) {
   .mainWrap {
-    grid-template-columns: 1fr; /* Adjust the grid layout for smaller screens */
+    grid-template-columns: 1fr;
   }
 
   .aside {
-    width: 100%; /* Make the aside div take the full width on smaller screens */
-    max-width: none; /* Remove max-width on smaller screens */
+    width: 100%;
   }
 
   .logoImage {
-    height: 40px; /* Reduce logo height for smaller screens */
+    height: 40px;
   }
 
   .head {
-    font-size: 1rem; /* Adjust heading font size for smaller screens */
+    font-size: 1.2rem;
   }
 
   .clientsList {
-    gap: 10px; /* Reduce gap between clients on smaller screens */
+    gap: 8px;
   }
 
   .btn {
-    font-size: 14px; /* Adjust button font size for smaller screens */
+    font-size: 14px;
   }
 
   .leaveBtn {
-    margin-top: 10px; /* Adjust margin for leave button on smaller screens */
+    margin-top: 8px;
   }
 }
+
 .asideInner {
   flex: 1;
 }
@@ -156,22 +174,23 @@ footer a:hover {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 16px;
 }
 
 .client {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-weight: bold;
+  font-weight: 600;
 }
+
 .userName {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .logo {
-  border-bottom: 1px solid #424242;
-  padding-bottom: 10px;
+  border-bottom: 2px solid #888;
+  padding-bottom: 8px;
 }
 
 .logoImage {
@@ -180,11 +199,13 @@ footer a:hover {
 
 .leaveBtn {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 16px;
 }
+
 .CodeMirror {
-  min-height: calc(100vh - 20px);
-  font-size: 20px;
-  line-height: 1.6;
-  padding-top: 20px;
+  min-height: calc(100vh - 40px);
+  font-size: 18px;
+  line-height: 1.5;
+  padding-top: 16px;
+  background-color: #f9f9f9;
 }
